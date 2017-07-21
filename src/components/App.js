@@ -8,13 +8,13 @@ const App = (props) => {
         
           <div className="navbar-brand">
             <a className="navbar-item" href="#">Scotch Books</a>
-            <div class="navbar-burger burger" data-target="navMenuExample">
+            <div className="navbar-burger burger" data-target="navMenuExample">
               <span></span>
               <span></span>
               <span></span>
             </div>
           </div>
-          <div className="navbar-menu" id="bs-example-navbar-collapse-1">
+          <div className="navbar-menu" id="navMenuExample">
             <ul className="navbar-start">
               <li className="navbar-item "><Link to="/">Home</Link></li>
               <li className="navbar-item "><Link to="/about">About</Link></li>
@@ -24,9 +24,9 @@ const App = (props) => {
           </div>
         
       </nav>
-      {/* Each smaller components */}
       {props.children}
     </div>
+    
   );
 };
 

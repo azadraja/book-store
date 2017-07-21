@@ -10,6 +10,7 @@ import routes from './routes';
 import '../node_modules/bulma/css/bulma.css';
 import * as bookActions from './actions/bookActions';
 import configureStore from './store/configureStore';
+import './components/styles.js';
 
 const store = configureStore();
 store.dispatch(bookActions.fetchBooks());
